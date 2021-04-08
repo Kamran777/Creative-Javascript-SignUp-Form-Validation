@@ -1,0 +1,182 @@
+/* GENERAL */
+
+*{
+    font-family: 'Exo', sans-serif;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('https://olema.qodeinteractive.com/wp-content/uploads/2020/08/h4-slider-img-1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+body .signature{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 19px;
+    width: 200px;
+    height: 45px;
+    background-color: #DB0038;
+}
+body .signature p{
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+}
+
+/* FORM */
+
+#create-account-form{
+    box-shadow: 9px 3px #DB0038;
+}
+
+#create-account-form h1{
+    font-weight: bold;
+    font-size: 35px;
+    padding-top: 71px;
+}
+
+#create-account-form form{
+    padding: 0px 40px 30px 40px;
+}
+
+#create-account-form form .form-group{
+    border: none;
+    margin-bottom: 10px;
+}
+
+#create-account-form form label{
+    font-weight: bold;
+}
+
+#create-account-form form .form-group input{
+    /* margin: auto; */
+    padding-left: 27px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    display: block;
+    border-radius: 8px;
+    background: none;
+}
+
+#create-account-form form .form-group i{
+    position: relative;
+    left: 85%;
+    bottom: 33px;
+    visibility: hidden;
+}
+
+#create-account-form form .form-group.success input{
+    border-color: #2ecc71;
+}
+
+#create-account-form form .form-group.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+#create-account-form form .form-group.error input{
+    border-color: #e74c3c;
+}
+
+#create-account-form form .form-group.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+#create-account-form form .form-group i{
+    position: relative;
+    bottom: 33px;
+    left: 84%;
+    visibility: hidden;
+}
+
+#create-account-form form .form-group small{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+#create-account-form form .main-btn{
+    background-color: #DB0038;
+    min-width: 40vh;
+    color: #fff;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#create-account-form form .main-btn:hover{
+    background-color: #161B40;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 370px){
+
+    #create-account-form{
+        width: 242px;
+    }
+
+    #create-account-form form .main-btn{
+        min-width: 28vh;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    body .signature{
+        width: 158px;
+        height: 36px;
+    }
+    body .signature p{
+        padding: 9px;
+        font-size: 12px;
+    }
+    
+    #create-account-form form{
+        padding: 0px 0px 40px 0px;
+    }
+
+    #create-account-form h1{
+        font-size: 27px;
+    }
+
+    #create-account-form form .form-group label, #create-account-form form .form-group input{
+        font-size: 11px;
+    }
+    
+    #create-account-form form .main-btn{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+
+    body .signature{
+        width: 175px;
+        height: 40px;
+    }
+    body .signature p{
+        padding: 11px;
+        font-size: 13px;
+    }
+
+    #create-account-form h1{
+        font-size: 30px;
+    }
+
+    #create-account-form form .form-group label, #create-account-form form .form-group input{
+        font-size: 13px;
+    }
+
+    #create-account-form form .main-btn{
+        font-size: 14px;
+    }
+}
